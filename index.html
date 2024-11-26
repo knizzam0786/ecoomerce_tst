@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Eccomerce</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  
+  <!--- ========== Header Section ============= --->
+
+  <header>
+     <div class="container">
+       <div class="wrap_header">
+          
+        <button id="toggle_button"><i class="fa fa-bars" aria-hidden="true"></i></button>  
+
+        <div class="logo">
+           <a href="">Venia</a>
+        </div>
+
+        <ul class="menu_list">
+           <li><a href="" class="active">Home</a></li>
+           <li><a href="">Women</a></li>
+           <li><a href="">Men</a></li>
+           <li><a href="">Smart Gear</a></li>
+           <li><a href="">Accessories</a></li>
+        </ul>
+
+        <div class="cart">
+           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+           <span class="cart_num">10</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--- ========== Banner Section ============= --->
+
+  <section class="inner_banner">
+     <div class="banner_content">
+        <h2>Men’s <br> Outerwear</h2>
+     </div>
+     <div class="banner_poster">
+        <img src="images/inner_banner.jpg">
+     </div>
+  </section>
+
+
+  <!--- ========== Catagory Section ============= --->
+
+
+  <section class="catagory_section">
+     <div class="inner_container">
+        <div class="wrapper_catagory_row">
+            <div class="filter_col">
+               <ul class="catagory_nav">
+                  <li><a href="">Clothing</a></li>
+                  <li><a href="">Women’s</a></li>
+                  <li class="active"><a href="">Outerwear</a></li>
+               </ul>
+
+               <h3>Filters</h3>
+               
+               <div class="filter_catagories">
+                  <h4>Categories</h4>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox1" value="jewelery">
+                    <label for="checkbox1">Jewellery</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox2" value="electronics">
+                    <label for="checkbox2">Electronics</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox3" value="men's clothing">
+                    <label for="checkbox3">Men's Clothing</label>
+                  </div>
+                  <div class="custom-checkbox">
+                    <input type="checkbox" id="checkbox4" value="women's clothing">
+                    <label for="checkbox4">Women's Clothing</label>
+                  </div>
+               </div>
+
+              <div class="price_wrapper">
+                  
+                  <h4>Price</h4>
+
+                  <div class="range_input">
+                      <input type="range" class="min-range" min="1" max="1000" value="100" step="10">
+                      <input type="range" class="max-range" min="1" max="1000" value="1000" step="10">
+                             
+                      <div class="slider_container">
+                          <div class="price_slider"></div>
+                      </div>
+                  </div>
+
+                  <div class="price_input_container">
+
+                      <div class="price_input">
+                          <div class="price_field">
+                              <input type="number" class="min-input" value="100">
+                          </div>
+                          <span> to </span>
+                          <div class="price_field">
+                              <input type="number" class="max-input" value="1000">
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+
+               <div class="search_column">
+                  <h4>Search by name</h4>
+                  <input type="text" placeholder="Search....">
+                  <button type="button" class="primary_btn">Search</button>
+               </div>
+
+            </div>
+
+            <div class="product_row">
+
+              <div class="wrap_count_row">
+                <div class="product_count">38 Results</div>
+
+                  <select class="custom_select" id="sort_by_price">
+                    <option value="">Sort By Price</option>
+                    <option value="asc">Price: Low to High</option>
+                    <option value="desc">Price: High to Low</option>
+                  </select>
+              </div>
+
+              <div class="product_list">
+
+                    <!-- Placeholder shimmer items -->
+                    <div class="product_col shimmer">
+                      <div class="shimmer-img"></div>
+                      <div class="shimmer-text"></div>
+                      <div class="shimmer-text small"></div>
+                    </div>
+
+                    <div class="product_col shimmer">
+                      <div class="shimmer-img"></div>
+                      <div class="shimmer-text"></div>
+                      <div class="shimmer-text small"></div>
+                    </div>
+
+                    <div class="product_col shimmer">
+                      <div class="shimmer-img"></div>
+                      <div class="shimmer-text"></div>
+                      <div class="shimmer-text small"></div>
+                    </div>
+
+                    <div class="product_col shimmer">
+                      <div class="shimmer-img"></div>
+                      <div class="shimmer-text"></div>
+                      <div class="shimmer-text small"></div>
+                    </div>
+
+                    <div class="product_col shimmer">
+                      <div class="shimmer-img"></div>
+                      <div class="shimmer-text"></div>
+                      <div class="shimmer-text small"></div>
+                    </div>
+                    
+                    <div class="product_col shimmer">
+                      <div class="shimmer-img"></div>
+                      <div class="shimmer-text"></div>
+                      <div class="shimmer-text small"></div>
+                    </div>
+
+              </div>
+              
+              <div class="load_more_row">
+                <button class="primary_btn" id="load_more" style="display: none;">Load More</button>
+              </div>
+
+            </div>
+        </div>
+     </div>
+  </section>
+
+ <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
